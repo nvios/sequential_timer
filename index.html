@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:20,100,500|Poppins:100,500&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" href="static/assets/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAADk4OQA8OzwHNzY3SjY1Nqg1NDXjNTQ1/DU0Nfs1NDXiNjU2pTc2N0c8OzwGOjk6AAAAAAAAAAAAWVlZADY1NgA5ODkaNjU2lTMyM+8zMjP/NDM0/zQzNP80MzT/NDM0/zQzNP81NDXuNjU2kDk4ORg3NjcATk1OADg3OAA5ODkbNjU2tTQzNP9EQ0T/QD9A/zQzNP80MzT/NTQ1/zU0Nf81NDX/NTQ1/zU0Nf82NTawOTg5GDg3OAA9PT0HNjU2lzQzNP8yMTL/mpqa/39/f/8zMjP/NzY3/zg3OP85ODn/OTg5/zk4Of84Nzj/NzY3/zg3OJFAQEAGNzc3TzU0NfA0MzT/MjEy/6alpv+JiIj/NTQ1/0FAQf9CQUH/PDs8/z08Pf8+PD3/PDs8/zs6O/86OTrtPDs8STY1Nq40MzT/NDM0/zQzNP+mpab/nZyd/5WVlf++vb3/vb29/5mYmP9UU1P/jo2N/4yMjP9BQED/Pj0+/z49Pac1NDXoNDM0/zU0Nf83Njf/qKen/+jo6P+kpKT/cG9v/3Z1df+zsrL/v7+//62srP+bmpr/R0VG/0NCQ/9BQEHiNTQ1/DU0Nf84Nzj/Ojk6/6yrq/+4t7j/SkhJ/0hGR/9KSUn/U1JS/7++vv+WlZX/TkxM/01LS/9JSEj/R0ZG+zY1Nvw2NTb/Ojk6/z08Pf+qqqr/jYyM/0lHR/9QTk7/U1FR/1FQUP+cm5v/srGx/1NRUf9TUVH/T05O/01LTPs2NTbmNzY3/zw7PP9APz//rq2t/6alpf9NTEz/VFJS/1dWVv9ZV1f/tbS0/6moqP9ZV1f/WVdX/1VUVP9SUFHgOTg5qjk4OP8+PT7/Q0FC/6+urv/r6+v/jIuL/2RiYv9oZmb/mZiY/9fW1v99e3v/YV9e/2BeXv9cWlr/WVhYoj8+P0o7OjvtPz4//0VDRP+lpKT/u7q6/8rJyf/Ozs3/0M/P/8zLy/+LiYj/aWdm/2lnZv9mZGT/Y2Fg6mJgYERTUlMGQUBBkEE/QP9HRkb/X11d/15dXf9kYmL/fHp6/4B/fv9ycHD/bmxr/3Fvbv9wbm3/bmtr/mxqaYptbGwES0pKAE5NTRdHRUasSEdH/k5MTf9WVFT/Xlxc/2RiYf9qaGf/cW9u/3Vzcv94dXT/eHV0/Xd1dKd3dnUUdnR0AJCSkABRUFAAVlVVFVBPT4pRUFDqV1ZW/19dXf9nZWX/b21s/3Zzcv97eXj/f3186IF/fYWDgYATgH59APf39wAAAAAAAAAAAGRiYwBqamoFXVxcP15dXZpjYWHXbGpp7nRyce17eXjVg4B/mIiGhTyUkpIEj42MAAAAAAAAAAAA4AcAAMADAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA4AcAAA==" />
     <style>
       body {
         color: #222;
@@ -24,7 +24,7 @@
     </style>
 <body>
   <div class="center">
-    <h3>Il timer delle ripetute della bicicletta per allenarsi le gambe:</h3>
+    <h3>Sequential Timer</h3>
     <br>
     <input type="text" class="text-input">
     <button class="start" type="submit">Start</button>
@@ -40,7 +40,7 @@ const timer = document.querySelector(".timer")
 
 let intervals
 let stopped = false
-const placeholder = "Inserisci le ripetute separate da una virgola (es: 0.1, 1.5, 3)"
+const placeholder = "Add intervals separated by a comma (eg: 0.1, 1.5, 3 minutes)"
 
 document.addEventListener('DOMContentLoaded', () => textInput.value = placeholder)
 
