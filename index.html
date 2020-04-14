@@ -55,6 +55,7 @@ start.addEventListener("click", e => {
   stop.innerHTML = "Stop"
   stopped = false
   intervals = textInput.value.replace(/[a-zA-Z(;:) ]/g,'').split(",").map(numStr => parseFloat(numStr)*60)
+  beep()
   intervalTimer(intervals)
 })
 
@@ -106,7 +107,7 @@ function countdown(totSeconds) {
       let counter = 0
       let alarm = setInterval(() => {
         beep()
-        if (++counter == 4) clearInterval(alarm)
+        if (++counter == 5) clearInterval(alarm)
       }, 150)
     }
   }, 1000)
